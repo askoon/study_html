@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>시멘틱 태그 예제</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
         header, footer, section, article, nav, aside {
             padding: 20px;
-            margin: 10px;
             border: 1px solid #ddd;
         }
+
         header {
             background: #f8f8f8;
         }
+
         nav {
             background: #eaeaea;
         }
+
         .content {
             display: flex;
             flex-direction: row;
         }
+
         aside {
             background: #f9f9f9;
             width: 20%;
             min-width: 200px;
         }
-        section {
-            background: #f4f4f4;
+
+        main {
             flex: 1;
         }
+
+        section {
+            background: #f4f4f4;
+        }
+
         article {
             background: #fff;
         }
+
         footer {
             background: #333;
             color: white;
@@ -45,6 +49,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <header>
@@ -67,18 +72,19 @@
                 <li><a href="#">JavaScript 초보자를 위한 안내</a></li>
             </ul>
         </aside>
-
-        <section>
-            <h2>최신 블로그 글</h2>
-            <article>
-                <h3>HTML 시멘틱 태그란?</h3>
-                <p>시멘틱 태그는 웹 문서의 의미를 명확하게 하기 위한 요소입니다...</p>
-            </article>
-            <article>
-                <h3>CSS 기본 스타일 가이드</h3>
-                <p>웹사이트 디자인의 기본적인 스타일을 정의하는 CSS 가이드...</p>
-            </article>
-        </section>
+        <main>
+            <section>
+                <h2>최신 블로그 글</h2>
+                <article>
+                    <h3>HTML 시멘틱 태그란?</h3>
+                    <p>시멘틱 태그는 웹 문서의 의미를 명확하게 하기 위한 요소입니다...</p>
+                </article>
+                <article>
+                    <h3>CSS 기본 스타일 가이드</h3>
+                    <p>웹사이트 디자인의 기본적인 스타일을 정의하는 CSS 가이드...</p>
+                </article>
+            </section>
+        </main>
     </div>
 
     <footer>
@@ -86,4 +92,5 @@
     </footer>
 
 </body>
+
 </html>
