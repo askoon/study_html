@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="최고의 영화를 추천하는 웹사이트">
+    <title>영화 리뷰 사이트</title>
+</head>
+
+<body>
+
+    <!-- 헤더 -->
+    <header>
+        <h1>🎬 최고의 영화 추천 🎥</h1>
+        <nav>
+            <a href="#movies">영화 목록</a> |
+            <a href="#review">리뷰 작성</a> |
+            <a href="#trailer">예고편</a> |
+            <a href="#posters">포스터</a>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- 영화 목록 (table 사용) -->
+    <section id="movies">
+        <h2>🎞️ 인기 영화 목록</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>영화 제목</th>
+                    <th>장르</th>
+                    <th>개봉 연도</th>
+                    <th>평점</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>인셉션</td>
+                    <td>SF, 액션</td>
+                    <td>2010</td>
+                    <td>⭐ 9.0</td>
+                </tr>
+                <tr>
+                    <td>인터스텔라</td>
+                    <td>SF, 드라마</td>
+                    <td>2014</td>
+                    <td>⭐ 8.7</td>
+                </tr>
+                <tr>
+                    <td>어벤져스: 엔드게임</td>
+                    <td>액션, 판타지</td>
+                    <td>2019</td>
+                    <td>⭐ 8.4</td>
+                </tr>
+                <tr>
+                    <td>기생충</td>
+                    <td>드라마, 스릴러</td>
+                    <td>2019</td>
+                    <td>⭐ 8.6</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- 영화 리뷰 작성 폼 -->
+    <section id="review">
+        <h2>📝 영화 리뷰 작성</h2>
+        <form>
+            <label for="movie-name">영화 제목:</label>
+            <input type="text" id="movie-name" required>
+            
+            <br>
+
+            <label for="rating">평점 (1~10):</label>
+            <input type="number" id="rating" min="1" max="10" required>
+
+            <br>
+
+            <label for="review-text">리뷰:</label>
+            <textarea id="review-text" rows="3" placeholder="영화에 대한 생각을 남겨주세요!" required></textarea>
+
+            <br>
+
+            <button type="submit">리뷰 제출</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- 영화 예고편 -->
+    <section id="trailer">
+        <h2>🎥 영화 예고편</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YoHD9XEInc0" 
+            title="Inception Trailer" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <hr>
+
+    <!-- 영화 포스터 -->
+    <section id="posters">
+        <h2>📸 영화 포스터</h2>
+        <ul>
+            <li>
+                <h3>인셉션</h3>
+                <img width="200" src="https://upload.wikimedia.org/wikipedia/ko/thumb/1/1d/%EC%9D%B8%EC%85%89%EC%85%98.jpg/220px-%EC%9D%B8%EC%85%89%EC%85%98.jpg" alt="인셉션 포스터">
+            </li>
+            <li>
+                <h3>인터스텔라</h3>
+                <img width="200"  src="https://upload.wikimedia.org/wikipedia/ko/b/b7/%EC%9D%B8%ED%84%B0%EC%8A%A4%ED%85%94%EB%9D%BC.jpg" alt="인터스텔라 포스터">
+            </li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- 푸터 -->
+    <footer>
+        <p>📞 문의: 010-1234-5678</p>
+        <p>📍 주소: 서울특별시 강남구 영화로 123</p>
+        <small>&copy; 2025 영화 리뷰 사이트. All rights reserved.</small>
+    </footer>
+
+</body>
+
+</html>

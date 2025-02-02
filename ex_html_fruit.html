@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="신선한 과일을 판매하는 웹사이트">
+    <title>과일 마켓</title>
+</head>
+
+<body>
+
+    <!-- 헤더 -->
+    <header>
+        <h1>🍎 과일 마켓 🍌</h1>
+        <nav>
+            <a href="#home">홈</a> |
+            <a href="#products">상품</a> |
+            <a href="#contact">문의</a>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- 메인 콘텐츠 -->
+    <main>
+
+        <section>
+            <h2>신선한 과일을 만나보세요!</h2>
+            <p><mark>100% 국내산</mark> 과일을 판매하는 온라인 마켓입니다.</p>
+            <img width="300" src="https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-3foodgroups_fruits_detailfeature.jpg?sfvrsn=64942d53_4" alt="과일 이미지">
+        </section>
+
+        <hr>
+
+        <!-- 주문 가능 과일 목록 (상품 목록 위) -->
+        <section>
+            <h2>🍏 주문 가능 과일 목록</h2>
+            <ul>
+                <li>🍎 사과</li>
+                <li>🍌 바나나</li>
+                <li>🍊 오렌지</li>
+                <li>🍇 포도</li>
+                <li>🍓 딸기</li>
+                <li>🥭 망고</li>
+                <li>🍉 수박</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- 상품 목록 -->
+        <section>
+            <h2>📢 오늘의 추천 과일</h2>
+
+            <article>
+                <h3>🍎 사과</h3>
+                <p><strong>달콤한 사과</strong>를 만나보세요.</p>
+                <p>가격: <s>5,000원</s> → <strong>4,000원</strong></p>
+                <p>재고: 10개 남음</p>
+                <button>장바구니에 담기</button>
+            </article>
+
+            <article>
+                <h3>🍌 바나나</h3>
+                <p>신선한 <em>바나나</em>를 할인된 가격에!</p>
+                <p>가격: <strong>3,000원</strong></p>
+                <p>재고: 20개</p>
+                <button>장바구니에 담기</button>
+            </article>
+        </section>
+        
+        <section>
+            <h2>💡 과일 마켓 고객 혜택</h2>
+            <ul>
+                <li>🚚 <strong>당일 배송</strong> (오후 3시 이전 주문 시)</li>
+                <li>💯 <mark>100% 신선 보장</mark> (품질 문제 시 전액 환불)</li>
+                <li>🎁 <em>선물 포장 서비스 제공</em></li>
+                <li>🏷️ 회원 가입 시 <s>5%</s> → <strong>10% 할인</strong> 쿠폰 지급</li>
+                <li>☎️ <a href="#contact">24시간 고객 지원</a></li>
+            </ul>
+        </section>
+    
+        <hr>
+
+        <!-- 주문 폼 -->
+        <section>
+            <h2>🛒 주문하기</h2>
+            <form>
+                <!-- 구매자 정보 -->
+                <h3>📋 구매자 정보</h3>
+
+                <label for="name">이름:</label>
+                <input type="text" id="name" required>
+
+                <br>
+
+                <label for="phone">연락처:</label>
+                <input type="tel" id="phone" placeholder="010-1234-5678" required>
+
+                <br>
+
+                <label for="email">이메일:</label>
+                <input type="email" id="email" placeholder="example@email.com" required>
+
+                <br>
+
+                <label for="address">배송 주소:</label>
+                <input type="text" id="address" required>
+
+
+
+
+                <!-- 과일 선택 -->
+                <h3>🍎 과일 선택</h3>
+                <label for="fruit1">과일 종류:</label>
+                <select id="fruit1">
+                    <option>사과</option>
+                    <option>바나나</option>
+                    <option>오렌지</option>
+                    <option>포도</option>
+                </select>
+                <br>
+
+                <label for="quantity1">수량:</label>
+                <input type="number" id="quantity1" min="1" max="10">
+
+                <br>
+                <label for="fruit2">과일 종류:</label>
+                <select id="fruit2">
+                    <option>딸기</option>
+                    <option>망고</option>
+                    <option>수박</option>
+                    <option>오렌지</option>
+                </select>
+                <br>
+
+                <label for="quantity2">수량:</label>
+                <input type="number" id="quantity2" min="1" max="10">
+
+
+                <!-- 추가 옵션 -->
+                <h3>🎁 추가 옵션</h3>
+                <label>
+                    <input type="checkbox">
+                    선물 포장 (추가 1,000원)
+                </label>
+
+                <br>
+
+                <label for="request">배송 요청사항:</label>
+                <textarea id="request" rows="2" placeholder="예: 문 앞에 두고 가주세요."></textarea>
+
+
+
+                <!-- 결제 방법 -->
+                <h3>💳 결제 방법</h3>
+                <label>
+                    <input type="radio" name="payment" checked> 카드 결제
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="payment"> 무통장 입금
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="payment"> 카카오페이
+                </label>
+
+                <br><br>
+
+                <button type="submit">✅ 주문하기</button>
+            </form>
+        </section>
+
+
+
+        <hr>
+
+        <!-- 동영상 삽입 -->
+        <section>
+            <h2>과일 보관 방법 🍏</h2>
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/eoERhGjhwb0"
+                title="[경기] 과일·채소 싱싱한 보관법은? / YTN" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- 푸터 -->
+    <footer>
+        <p>📞 문의: 010-1234-5678</p>
+        <p>📍 주소: 서울특별시 강남구 과일로 123</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17494.74199320222!2d128.12817296163325!3d37.074528319589156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356387c155d514a3%3A0xcd8d8670dad91bd4!2z7Lap7LKt67aB64-EIOygnOyynOyLnA!5e0!3m2!1sko!2skr!4v1738498909869!5m2!1sko!2skr"
+            width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br>
+        <small>&copy; 2025 과일 마켓. All rights reserved.</small>
+    </footer>
+    <!-- 끝 -->
+
+</body>
+
+</html>

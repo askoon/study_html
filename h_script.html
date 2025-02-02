@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Script 태그 예제</title>
+</head>
+<body>
+
+    <p id="text">버튼을 눌러보세요!</p>
+    <button onclick="changeText()">클릭</button>
+
+    <script>
+        function changeText() {
+            document.getElementById("text").innerText = "변경되었습니다!";
+        }
+    </script>
+
+</body>
+</html>
